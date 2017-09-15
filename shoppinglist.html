@@ -1,0 +1,29 @@
+
+
+
+<body>
+<script>
+	function addAnother () {
+  //create a new element and store it in a variable
+  var newListItem = document.createElement('li');
+  //create a new text node and store it in a variable
+  var newText = document.createTextNode('Turkey');
+  //Attach the new text node to the element. Notice there are no quote
+  newListItem.appendChild(newText);
+  //Find the new position where the new element should be added
+  var position = document.getElementByTagName('ul')[0];
+  //Insert the new element into its position. Looking for the ul pick the first item
+  position.appendChild(newListItem);
+  //appendChild is stuck to newListItem and newListItem is stuck to position
+  
+  }
+</script>
+<button onclick="addAnother()">
+CLick Here
+</button>
+<ul>
+  <li>Chicken</li>
+  <li>Duck</li>
+  <li>Goose</li>
+</ul>
+</body>
