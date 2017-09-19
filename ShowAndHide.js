@@ -21,3 +21,13 @@
     //If it is invisible, I will display it.
   }
 }
+  
+  ------------------------------------------------------------------------
+    
+   CSS PART
+  
+  #stem {
+  display: none;
+  //I have set the image to be invisible when the page loads by default.
+}
+
